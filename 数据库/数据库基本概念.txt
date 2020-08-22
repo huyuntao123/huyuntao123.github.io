@@ -1,0 +1,6 @@
+数据：能够输入计算机并能被计算机程序识别和处理的信息集合
+数据库：数据库是在数据库管理系统管理和控制之下，存放存储介质上的数据集合
+
+常用的数据库：	大型：Oracle	中型：Server	小型：MySQL
+
+基于嵌入式的数据库：SQLite，Firebird，Berkeley DB，eXtremeDB

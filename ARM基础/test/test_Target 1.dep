@@ -1,0 +1,2 @@
+Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
+F (.\start.s)(0x5F3E71D2)(--gdwarf-2 -mthumb-interwork -I"E:/Program Files/keil_v4/ARM/CMSIS/Include" -I"E:/Program Files/keil_v4/ARM/Inc/Samsung"--MD ./start.d -o ./start.o)

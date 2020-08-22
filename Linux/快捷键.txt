@@ -1,0 +1,6 @@
+ctrl+alt+t：打开终端
+ctrl+l：清屏
+ctrl+shift+n：再开一个窗口
+ctrl+c：停止运行的程序
+ctrl+z：暂停运行的程序，继续运行输入%
+ctrl+d：关闭标签页

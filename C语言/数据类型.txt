@@ -1,0 +1,14 @@
+bool : 头文件 #include <stdbool.h> 或者用 _Bool
+
+char（signed char） : 1字节（8位）	-128 ~ 127
+unsigned char : 	1	0 ~ 255
+
+short (signed short) :	2	-32768 ~ 32767
+unsigned short : 	2	0 ~ 64435
+
+int (signed int) : 	4	-2147483648 ~ 2147483647
+unsigned int : 		4	0 ~ 4294967295
+
+char 1,double 8 ,float 4
+
+	 

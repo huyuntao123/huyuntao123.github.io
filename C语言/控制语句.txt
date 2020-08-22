@@ -1,0 +1,14 @@
+switch(a):	a可以是整型，可以是枚举（enum）	
+
+例：enum weekday
+    ｛sun，mon,tue,wed｝a;
+     a = mon;//a = 1;
+
+
+goto：	无条件跳转语句，配合标号使用
+
+例：loop:
+	i++；
+	goto loop；
+
+return：return(<表达式>)	主要用于终止包含它的函数的执行   若终止的为主函数,则主程序结束

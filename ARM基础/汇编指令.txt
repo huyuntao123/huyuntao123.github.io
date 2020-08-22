@@ -1,0 +1,51 @@
+搬移指令：
+
+mov r1,#3	把5搬移到r1
+mov r2,r1	把r1搬移到r2
+mov r1,r0,LSL#2	r0左移2次搬移到r1
+mov r1,r0,LSR#2	r0右移2次搬移到r1
+mrs r0,cpsr	把CPSR的值读到r0
+msr cpsr,r0	把r0的值写到CPSR
+
+条件执行：
+
+cmp r2,#3	判断r2与3的关系
+moveq r1,#5	如果r2=3,就把5搬移到r1
+addgt r1,r1,#2	如果r2大于3就r1+2搬移到r1
+
+逻辑指令：
+
+and r0,r1,#0xFF	(r0 = r1&0xFF) 0xF=1111
+orr r3,r0,#0x0F	(r3 = r0|0xFF)
+bic r0,r0,#0x03 (0x03 = 00000011)清除r0中的0和1号位
+tst r0,#0x20	测试5号位（第6位）是否为1，是就Z标志位置1  
+
+算数指令：
+
+add r0,r1,r2  (r0 = r1 + r2)
+sub r0,r1,#3  (r0 = r1 - 3)
+mul r1,r2,r3  (r1 = r2 * r3)
+
+跳转指令：
+
+b    main	//跳转到标号为main地代码处
+bl   func	//保存 下一条要执行的指令的位置到LR寄存器,跳转函数func
+MOV PC, LR	 //当跳转代码结束后,用  MOV PC, LR  指令跳回来
+ 
+例：
+	.text
+
+main:
+	mov r0,#3
+	bl  func
+	mov r1,#4
+	b   main
+
+func:
+	add r2,#3
+	mov pc,lr
+
+beq   addr	//当CPSR寄存器中的Z条件码置位时，跳转到该地址处
+bne   addr	//当不等时，跳转到地址addr	
+
+	
