@@ -1,1 +1,0 @@
--mthumb-interwork -o "./test.elf" "./start.o" -nostartfiles -lm
